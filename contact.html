@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechnoCorp — Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="contact">
+    <nav>
+      <div class="logo">Techno<span class="glow">Corp</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section with background -->
+    <section
+      class="hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        padding: 120px 0;
+        text-align: center;
+      "
+    >
+      <div class="overlay container">
+        <h1>Contact <span class="underline">TechnoCorp</span></h1>
+        <p class="lead">
+          Have a project or question? Fill the enquiry form below.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="form-wrap">
+        <form class="form-card" action="#sent" method="get" autocomplete="on">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="company">Company (optional)</label>
+          <input id="company" name="company" />
+
+          <label for="type">Type of Enquiry</label>
+          <select id="type" name="type">
+            <option>General</option>
+            <option>Support</option>
+            <option>Partnership</option>
+            <option>Careers</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="submit-btn" type="submit">Send Enquiry</button>
+        </form>
+
+        <div class="form-card">
+          <h3>Our Offices</h3>
+          <p>Headquarters: 123 Innovation St, Tech City</p>
+          <p>Email: contact@technocorp.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+
+          <h3 style="margin-top: 12px">Business Hours</h3>
+          <p>Mon-Fri: 9am - 6pm</p>
+        </div>
+      </div>
+
+      <!-- :target overlay -->
+      <div id="sent">
+        <div class="box">
+          <h2>✅ Message Sent</h2>
+          <p>Thank you — we've received your enquiry. We'll reply soon.</p>
+          <a class="close" href="contact.html">Close</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 TechnoCorp — All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
